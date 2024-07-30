@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "156820937011",
+    "firebase_url": "https://orderapp-a5844-default-rtdb.firebaseio.com",
+    "project_id": "orderapp-a5844",
+    "storage_bucket": "orderapp-a5844.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156820937011:android:f4d93e94ecb6e125d2c646",
+        "android_client_info": {
+          "package_name": "org.orderapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBWo-oOC0JdF6N_clVf9b7TXK5d_pn2PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

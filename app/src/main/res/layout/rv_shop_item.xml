@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        tools:text="A"
+        android:background="@color/color_333333" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_pic"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="NAME" />
+
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toEndOf="@id/tv_pic"
+        android:drawableStart="@drawable/baseline_star_24"
+        android:drawablePadding="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="4.5"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_star"
+        android:layout_toEndOf="@id/tv_star"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="sale: 2000+"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_star"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tv_sale"
+        android:gravity="center"
+        android:text="distance: 2.0km"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/border3"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="Navigation"/>
+
+
+</RelativeLayout>
+

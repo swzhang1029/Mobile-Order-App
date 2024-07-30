@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:background="@color/color_333333" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/iv_pic"
+        android:gravity="start|top"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="NAME" />
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toStartOf="@id/tv_comment"
+        android:layout_toEndOf="@id/iv_pic"
+        android:layout_marginEnd="10dp"
+        android:gravity="start|top"
+        android:textColor="@color/color_666666"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="no:20231019" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_no"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/iv_pic"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/tv_comment"
+        android:gravity="start"
+        android:text="content"
+        android:textColor="@color/color_333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/iv_pic"
+        android:gravity="start"
+        android:text="20231019"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/border3"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="Comment"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="$10.00"
+        android:textColor="#f44c46"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
+

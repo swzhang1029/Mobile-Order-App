@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <include
+        android:id="@+id/common_title"
+        layout="@layout/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_title"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="Account" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="SIGN UP"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <include layout="@layout/common_loading" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_exit" />
+</RelativeLayout>
